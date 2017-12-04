@@ -1,0 +1,12 @@
+# vim
+*.sw*
+
+# kernel module
+modules.order
+Module.symvers
+*.mod.c
+*.mod.o
+*.o
+*.ko
+.*.cmd
+.tmp_version
