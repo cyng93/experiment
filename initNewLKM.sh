@@ -31,4 +31,4 @@ fi
 cp -R my_lkm_template $proj
 mv $proj/my_lkm_template.c $proj/${proj}.c
 sed -i "s/my_lkm_template/$proj/g" $proj/Makefile
-echo "#Experiment/$proj" > $proj/README.md
+echo "# Experiment/$proj" > $proj/README.md

@@ -30,4 +30,4 @@ fi
 
 cp -R my_mlkm_template $proj
 sed -i "s/my_mlkm_template/$proj/g" $proj/Makefile
-echo "#Experiment/$proj" > $proj/README.md
+echo "# Experiment/$proj" > $proj/README.md
