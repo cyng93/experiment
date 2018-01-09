@@ -9,7 +9,6 @@ $(MODULE_NAME)-objs += $(SRCS:.c=.o)
 all: $(MODULE_NAME).ko
 
 $(MODULE_NAME).ko: $(SRCS) Makefile
-	echo $(SRCS:.c=.o)
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 
 insert: $(MODULE_NAME).ko
