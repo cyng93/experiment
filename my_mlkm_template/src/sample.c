@@ -1,4 +1,4 @@
-#include "../include/sample.h"
+#include "sample.h"
 
 
 int InitSample(void)

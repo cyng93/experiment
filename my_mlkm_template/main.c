@@ -1,5 +1,5 @@
 #include <linux/module.h>
-#include "include/sample.h"
+#include "sample.h"
 
 
 static int myinit(void)

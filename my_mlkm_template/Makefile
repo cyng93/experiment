@@ -9,7 +9,9 @@ $(MODULE_NAME)-objs += $(SRCS:.c=.o)
 all: $(MODULE_NAME).ko
 
 $(MODULE_NAME).ko: $(SRCS) Makefile
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+	make \
+	KCFLAGS="-I$(PWD)/include" \
+	-C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 
 insert: $(MODULE_NAME).ko
 	@lsmod | grep -w $(MODULE_NAME) > /dev/null \
