@@ -1,4 +1,4 @@
-MODULE_NAME = my_lkm_template
+MODULE_NAME = t_lkm
 obj-m += $(MODULE_NAME).o
 
 all: $(MODULE_NAME).ko

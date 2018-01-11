@@ -30,11 +30,11 @@ if [ -d "$proj" ]; then
   die "directory '$proj' existed, try a new name?"
 fi
 
-cp -R my_mlkm_template $proj
+cp -R t_mlkm $proj
 
 cd $proj
 echo "# Experiment/$proj" > README.md
-sed -i "s/my_mlkm_template/$proj/g" Makefile
+sed -i "s/t_mlkm/$proj/g" Makefile
 mv src/sample.c src/${proj}.c
 mv include/sample.h include/${proj}.h
 

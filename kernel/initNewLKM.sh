@@ -28,7 +28,7 @@ if [ -d "$proj" ]; then
   die "directory '$proj' existed, try a new name?"
 fi
 
-cp -R my_lkm_template $proj
-mv $proj/my_lkm_template.c $proj/${proj}.c
-sed -i "s/my_lkm_template/$proj/g" $proj/Makefile
+cp -R t_lkm $proj
+mv $proj/t_lkm.c $proj/${proj}.c
+sed -i "s/t_lkm/$proj/g" $proj/Makefile
 echo "# Experiment/$proj" > $proj/README.md

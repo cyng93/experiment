@@ -1,4 +1,4 @@
-MODULE_NAME = my_mlkm_template
+MODULE_NAME = t_mlkm
 obj-m += $(MODULE_NAME).o
 
 SRCS := main.c 			\
