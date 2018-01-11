@@ -1,3 +1,4 @@
+#include <linux/module.h>
 #include "sample.h"
 
 
