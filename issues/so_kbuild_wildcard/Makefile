@@ -2,10 +2,10 @@ MODULE_NAME = foo
 obj-m += $(MODULE_NAME).o
 
 # [1-1]
-SRCS := main.c src/foo1.c
+# SRCS := main.c src/foo1.c
 
 # [1-2]
-# SRCS := main.c $(wildcard src/*.c)
+SRCS := main.c $(wildcard src/*.c)
 
 $(MODULE_NAME)-objs += main.o $(SRCS:.c=.o)
 
